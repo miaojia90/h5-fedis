@@ -1,0 +1,144 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* reset */
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+form,
+input,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 400;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none; 
+    -webkit-user-select: none;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+$r_750:640/750/2/32;
+@function rem($px) {
+    @return $px * $r_750 * 1rem;
+}
+
+$imgUrlPath:"@@@RESPREFIX@@@";
+@function urlPath($url) {
+    @return url($imgUrlPath+$url);
+}
+//CSS调整
+.flex-container{
+    list-style:none;
+    display: flex;//声明使用弹性盒布局 
+    flex-flow:row wrap;
+    // flex-direction: row-reverse;//确定主轴方向 确定条目排列方式
+    // flex-wrap:wrap;//超出主轴尺寸 会把条目排到下一行
+}
+.flex-item{
+    padding:rem(5);
+    font-size: rem(14);
+    &:last-child{
+        order:-1;
+    }
+}
+.vertical-container{
+    display: -webkit-flex;
+    display: flex;
+    height: rem(300);
+    border:1px solid red;
+    .vertically-centered{
+        margin:auto;
+        border:1px solid #000;
+    }
+}
+ .test1 {
+            text-align:justify;
+            text-justify:distribute-all-lines;/*ie6-8*/
+            text-align-last:justify;/* ie9*/
+            -moz-text-align-last:justify;/*ff*/
+            -webkit-text-align-last:justify;/*chrome 20+*/
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0){/* chrome*/
+            .test1:after{
+                content:".";
+                display: inline-block;
+                width:100%;
+                overflow:hidden;
+                height:0;
+            }
+        }
+
+.justify-div{
+    height: 500px;
+    background-color: #000;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    .child{
+        width: 100px;
+        display: inline-flex;
+        background-color:#FFF;
+    }
+}
+.top{
+    width: 100%;
+    background-color: #F00;
+    height: 300px;
+}
+.container{
+    border:20px solid #000;
+    height: rem(100);
+    width: 100%;
+    background-color:#F51;
+    overflow:auto;
+}
+

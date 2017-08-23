@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>前端构建工具模板</title>
+	    <script>
+    var iWidth = document.documentElement.clientWidth;
+    document.getElementsByTagName("html")[0].style.fontSize = iWidth / 10 + "px";
+    </script>
+	<!-- build:css styles.css -->
+	<link rel="stylesheet" href="styles/style.css">
+	<!-- endbuild -->	
+</head>
+<body>
+	<div class="container" id="main">
+		<div class="jumbotron text-center fedis-main">
+			<h1>h5-fedis</h1>					
+			<p>前端构建工具模板</p>
+		</div>
+		<hr>
+		<div class="footer text-center">
+			<small>h5-fedis · Created by major</small>
+		</div>
+	</div>
+	<!-- build:js javascript.js -->
+	<script src="scripts/index.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

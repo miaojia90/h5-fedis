@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>微信签到</title>
+	    <script>
+    var iWidth = document.documentElement.clientWidth;
+    document.getElementsByTagName("html")[0].style.fontSize = iWidth / 10 + "px";
+    </script>
+	<link rel="stylesheet" href="styles/index.css">	
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body> 
+    <!-- 数据框 -->
+	<div class="container">
+         <div class="input-container">
+         	<input type="text" name="" placeholder="请输入您的姓名">
+         	<a class="btn-operate">提交</a>
+         </div>
+	</div>
+	<!-- 弹框 -->
+	<div class="pop-container">
+		<div class="mark"></div>
+		<div class="pop-content">
+			<img src="img/success.png" />
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+	  $("body").css("height",document.documentElement.clientHeight);
+	});
+	setTimeout(function(){
+		$(".pop-container").hide();
+	},3000)
+</script>

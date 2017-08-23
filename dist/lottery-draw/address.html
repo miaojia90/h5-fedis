@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>5周年抽奖-收货地址</title>
+    <script>
+    var iWidth = document.documentElement.clientWidth;
+    document.getElementsByTagName("html")[0].style.fontSize = iWidth / 10 + "px";
+    </script>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="address-content">
+        <div class="input-div">
+            <div>收货人姓名：</div>
+            <div><input type="text" name="user-name"></div>
+        </div>
+        <div class="input-div">
+            <div>手机号码：</div>
+            <div><input type="text" name="phone-number"></div>
+        </div>
+        <div class="input-div">
+            <div>邮政编码：</div>
+            <div><input type="text" name="postCode"></div>
+        </div>
+        <div class="input-div">
+            <div>省市：</div>
+            <div><input type="text" name="province-city"></div>
+        </div>
+        <div class="input-div">
+            <div>详细地址：</div>
+            <div><textarea type="text" name="detail-address"  rows="3" cols="25"></textarea></div>
+        </div>
+        <div class="operate-btn">
+            <a class="btn-other">确认提交</a>
+        </div>
+    </div>
+    <!-- 提醒弹窗框 -->
+    <div class="remind-pop">
+        <div class="pop-mark"></div>
+        <div class="content">
+            <p class="content-info-p">
+                <i class="icon"></i>
+                <span>您输入的手机号码有误！</span>
+            </p>
+            <a class="btn-comm">确定</a>
+        </div>
+    </div>
+</body>
+
+</html>
